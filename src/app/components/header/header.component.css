@@ -1,0 +1,32 @@
+
+ .navbar{
+	background: #00b4cd;
+	justify-content: left !important;
+}
+
+.navbar-brand img{
+	width: 8em;
+	margin-right: -0.5rem;
+}
+.navbar-brand-text{
+	font-size: 1.2em;
+	margin-bottom: 0;
+	color: white;
+	font-family: "Poppins",sans-serif;
+	margin-bottom: .2rem;
+	padding-bottom: 4px;
+}
+
+
+/* BANNER + ABOUT_ME PROFILE */
+
+.banner img {
+	max-width: 100%;
+	object-fit: cover;
+
+}
+.banner{
+	padding: 0 !important;
+	position:relative;
+	height: 40vh;
+	width: 100%;

@@ -1,0 +1,417 @@
+
+:root{
+	--main-color: #00b4cd;
+	--main-color-dark: #00868f;
+	--main-color-light: #BFFBFF;
+
+}
+
+/* COLOR CODES:
+
++ Proyecto: 
+- #00868f (dark)
+- #00B4CD (main)
+- #bffbff (lighter)
+- #80f7ff (soft)
+
++ Fernando Luna 
+- #AB1FFF (strong)
+- #D48CFF (light)
+
++ Sofia Cuenca: 
+ - #F39C12 (strong)
+ - #F6C77E (light)
+
+font-family: 'Merriweather', serif;
+
+font-family: 'Montserrat', sans-serif;
+
+font-family: 'Roboto', sans-serif;
+
+ */
+
+
+ /* testeo visual 
+ *{outline: red 1px solid}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&amp;family=Montserrat:wght@300;400&amp;family=Roboto:ital,wght@0,400;1,100&amp;display=swap');
+
+
+ body{
+	background-color: rgb(253, 252, 252);
+	max-width: 100vw;
+	
+
+}
+
+/* NAVBAR */
+
+ .navbar{
+	background: #00b4cd;
+	justify-content: left !important;
+	
+}
+
+
+
+.navbar-brand img{
+	width: 8em;
+	margin-right: -0.5rem;
+}
+.navbar-brand-text{
+	font-size: 1.2em;
+	margin-bottom: 0;
+	color: white;
+	font-family: "Poppins",sans-serif;
+	margin-bottom: .2rem;
+	padding-bottom: 4px;
+}
+
+
+/* BANNER + ABOUT_ME PROFILE */
+
+.banner img {
+	max-width: 100%;
+	object-fit: cover;
+
+}
+.banner{
+	padding: 0 !important;
+	position:relative;
+	height: 40vh;
+	width: 100%;
+}
+.redes-conteiner ul li{
+	display: inline-block;
+	margin: 0  3px;
+	font-size: 25px;
+	color: #BFFBFF;
+	cursor: pointer
+
+	;
+}
+.sobreMi{
+	border: 0ch;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	
+
+
+}
+/* efectos para el contenedor de pantalla completa */
+#contenedor {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url(../imagenes/fondo_difuminado_login.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* contenedor del login a la izquierda */
+#contenedorcentrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    
+    min-width: 380px;
+    max-width: 900px;
+    width: 90%;
+    
+    background-color: #5f6769;
+    
+    /*opacity: 0.50;
+    filter: alpha(opacity=50);*/
+    
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* formulario de login */
+/* formulario de login */
+#login {
+    width: 100%;
+    max-width: 320px;
+    min-width: 320px;
+    padding: 30px 30px 50px 30px;
+    background-color: #719192;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+    
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
+
+#login label {
+    display: block;
+    font-family: 'Overpass', sans-serif;
+    font-size: 120%;
+    color:#3c4245;
+    
+    margin-top: 15px;
+}
+
+#login input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: #1b262c;
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#login input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: #E4E4E4;
+}
+
+#login button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:#1b262c;
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: #dfcdc3;
+    
+    margin-top: 10px;
+}
+
+#login button:hover {
+    background-color: #3c4245;
+    color:#dfcdc3;
+}
+/* formulario de login */
+/* formulario de login */
+
+/* seccion de la derecha */
+/* seccion de la derecha */
+/* por defecto */
+#derecho {
+    /*display: flex;
+    align-items:center;
+    justify-content:center;*/
+    
+    text-align: center;
+    width: 100%;
+    
+    opacity: 0.70;
+    filter: alpha(opacity=70);
+    
+    padding:20px 20px 20px 50px;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-size: 300%;
+    color:#dfcdc3;
+}
+
+.logo-empresa img {
+    width: 60%;
+}
+
+hr {
+    border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #dfcdc3;
+    
+}
+.pie-form {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color: #dfcdc3;
+    margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+    color: #719192;
+}
+/* seccion de la derecha */
+/* seccion de la derecha */
+
+/* ajustar a pantallas con ancho menor o igual a 775px; */
+/* ajustar a pantallas con ancho menor o igual a 775px; */
+@media all and (max-width: 775px)
+{
+    #contenedorcentrado {
+        flex-direction:column-reverse;
+
+        min-width: 380px;
+        max-width: 900px;
+        width: 90%;
+
+        background-color: #5f6769;
+
+        /*opacity: 0.50;
+        filter: alpha(opacity=50);*/
+
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+
+        -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+        -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+        box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    
+    #login {
+        margin: 0 auto;
+    }
+    
+    #derecho {
+        padding:20px 20px 20px 20px;
+    }
+    
+    #login label {
+        text-align: left;
+    }
+}
+/* ajustar a pantallas con ancho menor o igual a 775px; */
+/* ajustar a pantallas con ancho menor o igual a 775px; */
+.sobre{
+	display: inline-block;
+
+	
+}
+.redes-conteiner ul li :hover{
+color: #000102;
+
+}
+.about-me{
+	background-color: white;
+	position: relative;
+	text-align: center;
+}
+.about-me img{
+	border-radius: 50%;
+	width: 350px;
+	height: 350px;
+	position: relative;
+	/*top: -40%; */
+	border: 5px double var(--main-color);
+}
+ .about-me h1 {
+	padding-top: 190px;
+ }
+ .about-me h2 {
+	font-style: italic;
+ }
+
+.about-me-description{
+	padding: 2%;
+	border: 1px solid rgba(0,0,0,.5);
+	border-radius: 10px;
+}
+.about-me-description h3{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: #00868f;
+	font-size: 2.5em;
+}
+
+/* SECTIONS */
+
+.section .row{
+	background-color: white;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.panel{
+	border: 1px solid rgba(0,0,0,.5);
+	border-radius: 10px;
+	padding: 20px;
+	width: 90%;
+	height: 90%;
+}
+.section-title{
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	color: #00868f;
+	text-align: center;
+}
+
+.card-img-top{
+	object-fit: contain;
+}
+
+#skill-html{
+	color:#f16d00;
+}
+#skill-html .progress-bar{
+	background-color:#f16d00;
+}
+#skill-css{
+	color: #1b17ff;
+}
+#skill-css .progress-bar{
+	background-color:#1b17ff;
+}
+
+/* FOOTER */
+
+.web-footer{
+	background-color: var(--main-color);
+	text-align: center;
+	color: white;
+	max-width: 100%;
+	width: 100%;
+	height: 5vh;
+}
+.web-footer h2{
+	font-size: 20px;
+	padding-top: 1.1vh;
+	display: inline-block;
+}
